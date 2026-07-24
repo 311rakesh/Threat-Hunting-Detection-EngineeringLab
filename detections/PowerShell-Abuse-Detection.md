@@ -1,3 +1,8 @@
+<h1 align="center">Threat Hunting & Detection Engineering Lab</h1>
+
+<p align="center">
+Detection Engineering • Threat Hunting • Splunk ES • Windows Event Logs • Sysmon • MITRE ATT&CK
+</p>
 <p align="center">
 
 ![Splunk](https://img.shields.io/badge/Splunk-Enterprise_Security-000000?style=for-the-badge&logo=splunk)
