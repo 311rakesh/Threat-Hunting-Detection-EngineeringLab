@@ -1,3 +1,8 @@
+![Splunk](https://img.shields.io/badge/Splunk-Enterprise%20Security-black?logo=splunk)
+![Windows](https://img.shields.io/badge/Windows-Event%20Logs-blue?logo=windows)
+![Sysmon](https://img.shields.io/badge/Sysmon-Telemetry-success)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
+![SPL](https://img.shields.io/badge/SPL-Detection%20Engineering-orange)
 # Threat Hunting & Detection Engineering Lab
 
 ## Overview
