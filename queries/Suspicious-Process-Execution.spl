@@ -1,0 +1,25 @@
+index=windows (EventCode=4688 OR EventCode=1)
+
+| eval Process=coalesce(Image,New_Process_Name,process_name)
+
+| eval ParentProcess=coalesce(ParentImage,Parent_Process_Name)
+
+| eval CommandLine=coalesce(CommandLine,Process_Command_Line)
+
+| where
+(
+match(lower(ParentProcess),"winword.exe|excel.exe|outlook.exe")
+AND
+match(lower(Process),"powershell.exe|cmd.exe|mshta.exe|wscript.exe|cscript.exe")
+)
+OR
+match(lower(Process),"certutil.exe|regsvr32.exe|rundll32.exe|bitsadmin.exe")
+
+| table _time
+host
+user
+ParentProcess
+Process
+CommandLine
+
+| sort -_time
