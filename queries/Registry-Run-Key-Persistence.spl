@@ -1,0 +1,15 @@
+index=windows EventCode=13
+
+| eval RegistryPath=coalesce(TargetObject,RegistryPath)
+
+| where like(RegistryPath,"%CurrentVersion\\Run%")
+    OR like(RegistryPath,"%CurrentVersion\\RunOnce%")
+
+| table _time
+        host
+        user
+        Image
+        RegistryPath
+        Details
+
+| sort -_time
