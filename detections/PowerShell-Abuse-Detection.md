@@ -1,4 +1,4 @@
-<h1 align="center">Threat Hunting & Detection Engineering Lab</h1>
+<h1 align="center"> PowerShell Abuse Detection</h1>
 
 <p align="center">
 Detection Engineering • Threat Hunting • Splunk ES • Windows Event Logs • Sysmon • MITRE ATT&CK
@@ -12,7 +12,6 @@ Detection Engineering • Threat Hunting • Splunk ES • Windows Event Logs �
 ![SPL](https://img.shields.io/badge/SPL-Detection_Engineering-orange?style=for-the-badge)
 
 </p>
-# PowerShell Abuse Detection
 
 ## Detection Overview
 
