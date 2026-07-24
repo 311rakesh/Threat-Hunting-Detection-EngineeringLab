@@ -1,4 +1,18 @@
-# Encoded PowerShell Command Detection
+<h1 align="center"># Encoded PowerShell Command Detection</h1>
+
+<p align="center">
+Detection Engineering • Threat Hunting • Splunk ES • Windows Event Logs • Sysmon • MITRE ATT&CK
+</p>
+<p align="center">
+
+![Splunk](https://img.shields.io/badge/Splunk-Enterprise_Security-000000?style=for-the-badge&logo=splunk)
+![Windows](https://img.shields.io/badge/Windows_Event_Logs-0078D6?style=for-the-badge&logo=windows)
+![Sysmon](https://img.shields.io/badge/Sysmon-Telemetry-2E8B57?style=for-the-badge)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red?style=for-the-badge)
+![SPL](https://img.shields.io/badge/SPL-Detection_Engineering-orange?style=for-the-badge)
+
+</p>
+
 
 ## Detection Overview
 
