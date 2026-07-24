@@ -1,0 +1,15 @@
+index=windows
+(EventCode=4688 OR EventCode=1)
+
+| eval Process=coalesce(Image, New_Process_Name, process_name)
+| eval CommandLine=coalesce(CommandLine, Process_Command_Line)
+| eval ParentProcess=coalesce(ParentImage, Parent_Process_Name)
+
+| where like(lower(Process), "%powershell.exe")
+    OR like(lower(Process), "%pwsh.exe")
+
+| where match(lower(CommandLine),"(-enc|encodedcommand)")
+
+| table _time host user ParentProcess Process CommandLine
+
+| sort - _time
