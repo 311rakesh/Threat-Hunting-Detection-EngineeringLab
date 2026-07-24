@@ -1,4 +1,4 @@
-<h1 align="center"># Encoded PowerShell Command Detection</h1>
+<h1 align="center">Encoded PowerShell Command Detection</h1>
 
 <p align="center">
 Detection Engineering • Threat Hunting • Splunk ES • Windows Event Logs • Sysmon • MITRE ATT&CK
