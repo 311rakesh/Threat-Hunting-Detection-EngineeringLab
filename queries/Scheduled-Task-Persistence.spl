@@ -1,0 +1,22 @@
+index=windows
+
+(
+(EventCode=1 Image="*schtasks.exe")
+OR
+(EventCode=106)
+OR
+(EventCode=140)
+)
+
+| eval Process=coalesce(Image,process_name)
+
+| eval CommandLine=coalesce(CommandLine,Process_Command_Line)
+
+| table _time
+        host
+        user
+        EventCode
+        Process
+        CommandLine
+
+| sort -_time
